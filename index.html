@@ -127,17 +127,16 @@
 
 <!-- テキスト -->
 <div id="text">
-【32】There is a Japanese saying: “Kindness to others is never wasted.” It means this: when we are kind to someone, it helps that person, and someday the kindness may come back to us in another way. We do not need to expect a reward. Kind actions can make our heart and our time rich.
-　Let me share simple examples. You lend a pen to a classmate who forgets theirs. Your pen is away for a short time, but your classmate can write and feels calm. Later, you forget your umbrella on a rainy day. Another classmate offers to share an umbrella with you. Your small help returns to you.
-　Another example: You share half of your bread with a friend who is hungry. Yes, your bread becomes less. But you enjoy eating together, and your bond grows stronger. Kindness can make friendship warm and strong.
-　Kindness is not about harming yourself or always giving up your needs. It is about a gentle heart and a wish to help in a useful way. One day, I helped a friend with a hard problem. I listened and gave ideas. I forgot about it. Years later, I had a big problem. I did not ask anyone, but that friend sent me a message at the right time. We met again after many years. The friend listened to me and gave very good advice. I felt lucky. It was like a gift.
-　Kindness may not return soon, and it may not return from the same person. So do not wait or worry. Live with quiet hope. Kindness moves in circles, and it often comes back when we most need it.
+【33】Hello again! Let's talk more about the big badminton news. The rule changes from 21 points to 15 points. But why?
+The big reason is time. Old games are too long. Sometimes a game takes more than one hour! Long games are not good for TV. People want to see fast and exciting matches. This new rule makes the game shorter.
+Also, the game style will change. With 15 points, players cannot relax. They must run fast from the very first point. Every point is very important now. There is no time to rest!
+This makes the game difficult for players, but very fun for fans. This is a new, fast era for badminton!
 </div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="32.mp3" type="audio/mpeg">
+    <source src="33.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -150,11 +149,13 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> 善は急げ
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Badminton games will change to 15 points to make matches shorter and better for TV.
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> 急がば回れ</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> 情けは人の為ならず </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> 失敗は成功のもと </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> The new game style will be very fast, so players must focus from the very first point.
+</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> The games will become longer than before because fans want to watch slow matches. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Players can relax more in the new game because the points are not important.
+ </span>
 </div>
 
 <div id="result"></div>
@@ -174,8 +175,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: c
-  const correctAnswers = ["c"];
+  // 正解選択肢: A・B
+  const correctAnswers = ["a","b"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -200,6 +201,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
